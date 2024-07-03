@@ -2,5 +2,62 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
+    background-color: black;
+    color: aliceblue;
 
 }
+
+html {
+    font-size: 62.5%;
+}
+p {
+    font-size: 1.6rem;
+}
+
+    
+.labelCapsule{
+    
+    width: 620px;
+    height: 741px;
+    border: 2px solid #beb9b9;
+    
+
+}
+.contregis {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    
+    
+    
+  }
+
+  .contregis label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+    font-size: 1rem;
+    
+    
+  }
+.contregis input {
+    width: 300px;
+    height: 45px;
+    background-color: rgb(12, 17, 41);
+    border-radius: 16px;
+    border: 2px solid #beb9b9;
+    box-sizing: border-box; 
+    
+  }
+  .contbtn button{
+    font-size: 2.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+    width: 300px;
+    height: 45px;
+    border-radius: 16px;
+    border: 2px solid #beb9b9;
+    background-color: #3970BE;
+
+  }
