@@ -2,9 +2,7 @@
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
-    background-color: black;
-    color: aliceblue;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -14,50 +12,98 @@ p {
     font-size: 1.6rem;
 }
 
-    
-.labelCapsule{
-    
-    width: 620px;
-    height: 741px;
-    border: 2px solid #beb9b9;
-    
+
+ body{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#080F14;
+  color: #F0FFFF;
+}
+
+
+.Contreglog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 54px;
+  
+  
+}
+.Continput{
+  width: 340px;
+  
 
 }
-.contregis {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 20px;
-    
-    
-    
-  }
+.Contregis{
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 0 55px 0;
+  
+  /*entiendo que es la pocicion dada 
+  al contenido del lable line*/
+}
+.Contregis:nth-child(4) {
+  margin: 40px 0 0 0; 
+}
+.Contregis input{/*hago uso de child y ordeno que solo los input 
+  de la clase Continput se modifiquen*/
+  position: absolute;
+  width: 100%;
+  outline: none;
+  font-size: 2.2em;
+  padding: 0 2px; /*espacio donde se empiesa a escribir*/
+  line-height: 45px;
+  background-color: transparent;
+  color: #F0FFFF;
+  border-radius: 10px;
+  border: 2px solid #F0FFFF;
+  transition: 0.1s ease;
+  z-index: 1111;
 
-  .contregis label {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700; 
-    font-size: 1rem;
-    
-    
-  }
-.contregis input {
-    width: 300px;
-    height: 45px;
-    background-color: rgb(12, 17, 41);
-    border-radius: 16px;
-    border: 2px solid #beb9b9;
-    box-sizing: border-box; 
-    
-  }
-  .contbtn button{
-    font-size: 2.6rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700; 
-    width: 300px;
-    height: 45px;
-    border-radius: 16px;
-    border: 2px solid #beb9b9;
-    background-color: #3970BE;
+}
+.labelline{
+  position: absolute;
+  font-size: 1.6em;
+  color: #F0FFFF;
+  padding: 0 20px;
+  margin: 0 15px;
+  background-color:#080F14;
+  transition: 0.2s ease;
+}
+.Contregis input:focus,
+.Contregis input:valid{
+  color: #0047AB;
+  border: 2px solid #0047AB;
+}
+.Contregis input:focus + .labelline,
+.Contregis input:valid + .labelline{
+  color: #0047AB;
+  height: 20px;
+  margin: 0 20px;
+  padding: 0 10px;
+  line-height: 20px;
+  transform: translate(-17px,-10px)scale(0.88);
+  z-index: 1111;
+}
+.btnregis{
+  color: #F0FFFF;
+  width: 320px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3970BE;
+  font-size: 2.6em;
+  font-weight:bold;
 
-  }
+}
+.logacces{
+  font-size: 1.3em;
+}
+h2{
+  font-size: 4em;
+}
+
