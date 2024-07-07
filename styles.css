@@ -8,10 +8,6 @@
 html {
     font-size: 62.5%;
 }
-p {
-    font-size: 1.6rem;
-}
-
 
  body{
   min-width: 100vw;
@@ -28,82 +24,119 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 54px;
+  gap: 5.4rem;
   
   
 }
+
 .Continput{
-  width: 340px;
+  width: 28rem;
   
 
 }
 .Contregis{
   position: relative;
-  height: 50px;
-  line-height: 50px;
-  margin: 0 0 55px 0;
+  height: 5rem;
+  line-height: 5rem;
+  margin: 0 0 5.5rem 0;
   
-  /*entiendo que es la pocicion dada 
-  al contenido del lable line*/
+  
+}
+
+.Contregis input{
+  position: absolute;
+  width: 100%;
+  outline: none;
+  font-size: 2.0rem;
+  padding: 0 0.2rem; /*espacio donde se empiesa a escribir*/
+  line-height: 4.5rem;
+  background-color: transparent;
+  color: #F0FFFF;
+  border-radius: 10px;
+  border: 0.2rem solid #F0FFFF;
+  transition: 0.1s ease;
+  z-index: 1111;
 }
 .Contregis:nth-child(4) {
   margin: 40px 0 0 0; 
 }
-.Contregis input{/*hago uso de child y ordeno que solo los input 
-  de la clase Continput se modifiquen*/
-  position: absolute;
-  width: 100%;
+.Prueba{
+  display: flex; /* Asegura que los elementos hijos estén en fila */
+  flex-direction: row; /* Asegura que los elementos hijos estén en fila */
+  position: relative;
+  height: 5rem;
+  line-height: 5rem;
+  margin: 0 0 0 0;
+  
+  
+
+}
+
+.Prueba input {
+  width: 75px; /* Ajuste del ancho de cada input */
+  height: 50px; /* Ajuste de la altura de cada input */
+  text-align: center; /* Centra el texto dentro de los inputs */
+  box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+  margin: 0 26px 0 0;
   outline: none;
-  font-size: 2.2em;
-  padding: 0 2px; /*espacio donde se empiesa a escribir*/
-  line-height: 45px;
+  font-size: 2.0rem;
+  padding: 0 0.2rem; /*espacio donde se empiesa a escribir*/
+  line-height: 4.5rem;
   background-color: transparent;
   color: #F0FFFF;
   border-radius: 10px;
-  border: 2px solid #F0FFFF;
+  border: 0.2rem solid #F0FFFF;
   transition: 0.1s ease;
   z-index: 1111;
-
+}
+.Plabelline{
+  position:relative;
+  font-size: 1.6rem;
+  color: #F0FFFF;
+  /*padding: 0 2rem;*/
+  /*margin: 0 1.5rem;*/
+  background-color:#080F14;
+  transition: 0.2s ease;
 }
 .labelline{
   position: absolute;
-  font-size: 1.6em;
+  font-size: 1.6rem;
   color: #F0FFFF;
-  padding: 0 20px;
-  margin: 0 15px;
+  padding: 0 2rem;
+  margin: 0 1.5rem;
   background-color:#080F14;
   transition: 0.2s ease;
 }
 .Contregis input:focus,
 .Contregis input:valid{
   color: #0047AB;
-  border: 2px solid #0047AB;
+  border: 0.2rem solid #0047AB;
 }
 .Contregis input:focus + .labelline,
 .Contregis input:valid + .labelline{
   color: #0047AB;
-  height: 20px;
-  margin: 0 20px;
-  padding: 0 10px;
-  line-height: 20px;
-  transform: translate(-17px,-10px)scale(0.88);
+  height: 2rem;
+  margin: 0 2rem;
+  padding: 0 1rem;
+  line-height: 2rem;
+  transform: translate(-1.7rem,-1rem)scale(0.88);
   z-index: 1111;
 }
 .btnregis{
   color: #F0FFFF;
-  width: 320px;
-  height: 50px;
-  border-radius: 10px;
+  width: 28rem;
+  height: 5rem;
+  border-radius: 1rem;
   border: none;
   background-color: #3970BE;
-  font-size: 2.6em;
+  font-size: 2.6rem;
   font-weight:bold;
 
 }
 .logacces{
-  font-size: 1.3em;
+  font-size: 1.3rem;
 }
-h2{
-  font-size: 4em;
+.Encabezado {
+  font-size: 3.7rem;
 }
 
