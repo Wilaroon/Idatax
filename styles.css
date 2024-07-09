@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
  body{
@@ -19,36 +19,29 @@ html {
   color: #F0FFFF;
 }
 
-
 .Contreglog{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5.4rem;
-  
-  
 }
 
 .Continput{
   width: 28rem;
-  
-
 }
 .Contregis{
   position: relative;
   height: 5rem;
   line-height: 5rem;
   margin: 0 0 5.5rem 0;
-  
-  
 }
 
-.Contregis input{
+input.log{
   position: absolute;
   width: 100%;
   outline: none;
   font-size: 2.0rem;
-  padding: 0 0.2rem; /*espacio donde se empiesa a escribir*/
+  padding: 0 1.3rem;
   line-height: 4.5rem;
   background-color: transparent;
   color: #F0FFFF;
@@ -57,47 +50,50 @@ html {
   transition: 0.1s ease;
   z-index: 1111;
 }
+
 .Contregis:nth-child(4) {
+  display: flex;
+  justify-content:space-between;
+  box-sizing: border-box;
   margin: 40px 0 0 0; 
+  line-height: normal;
 }
-.Prueba{
-  display: flex; /* Asegura que los elementos hijos estén en fila */
-  flex-direction: row; /* Asegura que los elementos hijos estén en fila */
-  position: relative;
+
+.Contegris2{
+  width: calc((100% / 3) - 2rem);
   height: 5rem;
-  line-height: 5rem;
-  margin: 0 0 0 0;
+  position: relative;
+  line-height: 2.5rem;
+  margin: 0.5rem 0;
   
-  
-
 }
-
-.Prueba input {
-  width: 75px; /* Ajuste del ancho de cada input */
-  height: 50px; /* Ajuste de la altura de cada input */
-  text-align: center; /* Centra el texto dentro de los inputs */
-  box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
-  margin: 0 26px 0 0;
+input.date{
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
   outline: none;
   font-size: 2.0rem;
-  padding: 0 0.2rem; /*espacio donde se empiesa a escribir*/
+  padding: 0 1.3rem;
   line-height: 4.5rem;
   background-color: transparent;
   color: #F0FFFF;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 0.2rem solid #F0FFFF;
   transition: 0.1s ease;
   z-index: 1111;
+
 }
+
 .Plabelline{
-  position:relative;
+  position: absolute;
   font-size: 1.6rem;
   color: #F0FFFF;
-  /*padding: 0 2rem;*/
-  /*margin: 0 1.5rem;*/
-  background-color:#080F14;
+  padding: 1.19rem 0.6rem;
+  margin: 0 1.5rem;
+  background-color: #080F14;
   transition: 0.2s ease;
 }
+
 .labelline{
   position: absolute;
   font-size: 1.6rem;
@@ -107,14 +103,16 @@ html {
   background-color:#080F14;
   transition: 0.2s ease;
 }
-.Contregis input:focus,
-.Contregis input:valid{
-  color: #0047AB;
-  border: 0.2rem solid #0047AB;
+
+input.log:focus,
+input.log:valid{
+  color: #3970BE;
+  border: 0.2rem solid #3970BE;
 }
-.Contregis input:focus + .labelline,
-.Contregis input:valid + .labelline{
-  color: #0047AB;
+
+input.log:focus + .labelline,
+input.log:valid + .labelline{
+  color: #3970BE;
   height: 2rem;
   margin: 0 2rem;
   padding: 0 1rem;
@@ -122,6 +120,23 @@ html {
   transform: translate(-1.7rem,-1rem)scale(0.88);
   z-index: 1111;
 }
+
+input.date:focus,
+input.date:valid {
+  color: #3970BE;
+  border: 0.2rem solid #3970BE;
+}
+
+input.date:focus + .Plabelline,
+input.date:valid + .Plabelline {
+  color: #3970BE;
+  height: 2rem;
+  margin: 0 2rem;
+  padding: 0 1rem;
+  transform: translate(-1.4rem,-1.2rem)scale(0.88);
+  z-index: 1111;
+}
+
 .btnregis{
   color: #F0FFFF;
   width: 28rem;
@@ -136,7 +151,7 @@ html {
 .logacces{
   font-size: 1.3rem;
 }
+
 .Encabezado {
   font-size: 3.7rem;
 }
-

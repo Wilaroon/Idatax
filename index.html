@@ -16,25 +16,32 @@
             <form class="Continput" id="registerForm">
 
                 <div class="Contregis">
-                    <input type="text" id="username" name="username" required>
+                    <input class="log" type="text" id="username" name="username" required>
                     <label class="labelline" for="username">Nombre de Usuario</label>
                 </div>
                 <div class="Contregis">
-                    <input type="email" id="email" name="email" required>
+                    <input class="log" type="email" id="email" name="email" required>
                     <label class="labelline" for="email">Correo Electrónico</label>
                 </div>
                 <div class="Contregis">
-                    <input type="password" id="password" name="password" required>
+                    <input class="log" type="password" id="password" name="password" required>
                     <label class="labelline" for="password">Contraseña</label>
                 </div>
-                <div class="Prueba" id="rema">
-                    <input class="fecha" id="day" name="day" min="1" max="31" required>
-                    <label class="Plabelline" for="day">Dia</label>
-                    <input class="fecha" id="month" name="month" min="1" max="12" required>
-                    <label class="Plabelline" for="month">Mes</label>
-                    <input class="fecha" id="year" name="year" min="1900" max="2100" required>
-                    <label class="Plabelline" for="year">Año</label>
-            
+                <div class="Contregis">
+                    <div class="Contegris2">
+                        <input class="date" type="day" id="day" name="day" min="1" max="31" required>
+                        <label class="Plabelline" for="day">Día</label>
+                    </div>
+                
+                    <div class="Contegris2">
+                        <input class="date" type="month" id="month" name="month" min="1" max="12" required>
+                        <label class="Plabelline" for="month">Mes</label>
+                    </div>
+                
+                    <div class="Contegris2">
+                        <input class="date" type="year" id="year" name="year" min="1900" max="2100" required>
+                        <label class="Plabelline" for="year">Año</label>
+                    </div>
                 </div>
             </form>
             
@@ -55,6 +62,6 @@
     </main>
    
 
-    <script src="app.js"></script>
+    <!--<script src="app.js"></script>-->
 </body>
 </html>
