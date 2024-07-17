@@ -5,22 +5,67 @@
   font-family: 'Roboto', sans-serif;
 }
 
+
 html {
   font-size: 62.5%;
+  overflow: hidden; /* Evitar scroll en la página */
 }
 
- body{
-  min-width: 100vw;
-  min-height: 100vh;
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 8rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:#080F14;
+  background-color: #080F14;
   color: #F0FFFF;
 }
 
-.Contreglog{
+main {
   display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.Contimg{
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.fondimg {
+  max-width: 100%;
+  max-height: 100%;
+  
+  /*object-fit: cover;*/
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 1rem; /* Ajusta según sea necesario */
+  left: 1rem; /* Ajusta según sea necesario */
+  transform: translate(+27rem, +6rem); /* Centra el logo en la imagen de fondo */}
+  
+
+.logoimg {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+}
+
+.idatax {
+  font-size: 3.7rem;
+  font-weight: bold;
+}
+
+.Contreglog{
+  flex:1;
+  display: flex;
+  padding: 4rem;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 5.4rem;
@@ -48,6 +93,7 @@ input.log{
   border-radius: 10px;
   border: 0.2rem solid #F0FFFF;
   transition: 0.1s ease;
+ 
   z-index: 1111;
 }
 
@@ -67,6 +113,26 @@ input.log{
   margin: 0.5rem 0;
   
 }
+select.cap{
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  outline: none;
+  font-size: 1.72rem;
+  padding: 1.19rem 1.3rem;
+  line-height: 4.5rem;
+  background-color: transparent;
+  color: #F0FFFF;
+  border-radius: 1rem;
+  border: 0.2rem solid #F0FFFF;
+  transition: 0.1s ease;
+  z-index: 1111;
+  max-height: 5rem;
+  min-height: 2rem;
+  overflow-y: auto; 
+}
+
+
 input.date{
   box-sizing: border-box;
   position: absolute;
@@ -143,13 +209,20 @@ input.date:valid + .Plabelline {
   height: 5rem;
   border-radius: 1rem;
   border: none;
-  background-color: #3970BE;
+  background-color:#3970BE ;
   font-size: 2.6rem;
   font-weight:bold;
 
 }
+.btnregis:hover {
+  background-color: #0047AB; /* Cambia el color de fondo al pasar el ratón por encima */
+  transform: scale(1.01); /* Agranda un poco el botón al pasar el ratón por encima */
+}
 .logacces{
   font-size: 1.3rem;
+}
+.logacces a {
+  color: #3970BE;
 }
 
 .Encabezado {
